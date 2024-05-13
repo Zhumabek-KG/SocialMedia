@@ -365,7 +365,7 @@
                                             <a href="/profile/{{suggestion.user}}" class="block capitalize font-semibold"> {{suggestion.user}} </a>
                                             {% if suggestion.bio|length <= 8 %}
                                             <span class="block capitalize text-sm"> {{suggestion.bio}} </span>
-                                            {% elif suggestion.bio|length > 11 %}
+                                            {% else %}
                                             <span class="block capitalize text-sm"> {{suggestion.bio|slice:":10"}} . . . </span>
                                             {% endif%}
                                         </div>
